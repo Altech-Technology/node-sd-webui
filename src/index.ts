@@ -17,6 +17,7 @@ export type Client = {
 
 const sdwebui = (props?: Props): Client => {
   const apiUrl = props?.apiUrl || "http://localhost:7860";
+  const headers = props?.headers || {};
 
   return {
     apiUrl,
